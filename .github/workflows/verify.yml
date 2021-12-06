@@ -15,4 +15,5 @@ name: test
 jobs:
   test:
     runs-on: ubuntu-latest
-    run: echo ${{github}}
+    steps:
+      run: echo ${{github}}
