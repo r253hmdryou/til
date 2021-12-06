@@ -17,4 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test
-      run: echo ${{github.event.review.status}}
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo ${{github.event.review.state }}
