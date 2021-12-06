@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test
-      run: echo ${{github.event.review}}
+      run: echo ${{github.event.review.status}}
