@@ -14,5 +14,5 @@ on:
 name: test
 jobs:
   test:
-  runs-on: ubuntu-latest
-  run: echo ${{github}}
+    runs-on: ubuntu-latest
+    run: echo ${{github}}
